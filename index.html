@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayan Ahmed Shamim | Personal Website</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 60px 0 40px 0;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #38bdf8;
+            font-weight: 500;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 1.6rem;
+            color: #fff;
+            margin: 40px 0 20px 0;
+            position: relative;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #334155;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: #38bdf8;
+        }
+
+        /* About Section */
+        .about-card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #334155;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: #38bdf8;
+        }
+
+        .project-card h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        /* Contact & Buttons */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #38bdf8;
+            color: #0f172a;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #0ea5e9;
+            transform: scale(1.03);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #38bdf8;
+            border: 2px solid #38bdf8;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .about-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80" alt="Shayan Ahmed Shamim" class="profile-img">
+            <h1>শায়ান আহমেদ শামিম</h1>
+            <p>ওয়েব ডিজাইনার ও টেকপ্রেমী</p>
+        </header>
+
+        <section>
+            <h2 class="section-title">আমার সম্পর্কে</h2>
+            <div class="about-card">
+                <p>স্বাগতম আমার ব্যক্তিগত ওয়েবসাইটে! আমি প্রযুক্তি এবং ওয়েব ডেভেলপমেন্ট নিয়ে কাজ করতে পছন্দ করি। ইন্টারনেটে নিজের একটি সুন্দর ও কার্যকরী জায়গা তৈরি করাই আমার লক্ষ্য। আমি প্রতিনিয়ত নতুন নতুন ডিজাইন এবং কোডিং শিখছি এবং নিজেকে একজন দক্ষ ডেভেলপার হিসেবে গড়ে তুলছি।</p>
+                
+                <h3 style="margin-top: 20px; font-size: 1.1rem; color: #fff;">আমার দক্ষতা (Skills):</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Web Design</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">আমার প্রজেক্টস</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <h3>পার্সোনাল পোর্টফোলিও</h3>
+                    <p>এটি আমার প্রথম সম্পূর্ণ রেসপনসিভ ব্যক্তিগত ওয়েবসাইট, যা গিটহাব পেজেস-এর মাধ্যমে লাইভ করা হয়েছে।</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>ভবিষ্যত প্রজেক্ট</h3>
+                    <p>খুব শীঘ্রই এখানে আমার তৈরি করা নতুন নতুন চমৎকার ওয়েব ডিজাইন এবং প্রজেক্টগুলো যুক্ত করা হবে।</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">যোগাযোগ</h2>
+            <div class="about-card" style="text-align: center;">
+                <p style="margin-bottom: 15px;">আপনার কি কোনো প্রশ্ন আছে বা আমার সাথে কোনো প্রজেক্টে কাজ করতে চান? সরাসরি যোগাযোগ করতে পারেন।</p>
+                <div class="btn-container">
+                    <a href="mailto:your-email@example.com" class="btn">ইমেইল করুন</a>
+                    <a href="#" class="btn btn-outline">ফেসবুক প্রোফাইল</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; ২০২৬ শায়ান আহমেদ শামিম। সর্বস্বত্ব সংরক্ষিত।</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
